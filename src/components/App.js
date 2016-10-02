@@ -19,6 +19,7 @@ class App extends React.Component {
         ref={ref => {this._nav = ref}}
         initialRoute={{
           component: MySports,
+          title: 'My sport',
           rightButtonTitle: 'Add',
           onRightButtonPress: () => this.handlePlusSportPress()
         }}
