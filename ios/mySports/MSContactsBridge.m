@@ -1,8 +1,8 @@
 //
-//  ContactsBridge.m
+//  MSContactsBridge.m
 //  mySports
 //
-//  Created by Anton on 07/10/2016.
+//  Created by Anton on 08/10/2016.
 //  Copyright © 2016 Facebook. All rights reserved.
 //
 
@@ -11,8 +11,6 @@
 
 @interface RCT_EXTERN_MODULE(MSContacts, NSObject)
 
-RCT_EXTERN_METHOD(getOwnContact:(RCTPromiseResolveBlock)resolver rejecter:(RCTPromiseRejectBlock)rejecter)
-
-RCT_EXTERN_METHOD()
+RCT_EXTERN_METHOD(getOwnContact:(RCTPromiseResolveBlock *)resolve rejecter:(RCTPromiseRejectBlock *)reject)
 
 @end

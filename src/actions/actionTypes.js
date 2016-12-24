@@ -1,1 +1,17 @@
+//Service state actions
+export const LOAD_STATE_REQUEST = 'LOAD_STATE_REQUEST'
+export const LOAD_STATE_RECEIVE = 'LOAD_STATE_RECEIVE'
+export const LOAD_STATE_ERROR = 'LOAD_STATE_ERROR'
+
+//Sports actions
 export const ADD_SPORT = 'ADD_SPORT'
+export const REMOVE_SPORT = 'REMOVE_SPORT'
+
+//Service contact actions
+export const LOAD_CONTACTS_REQUEST = 'LOAD_CONTACTS_REQUEST'
+export const LOAD_CONTACTS_RECEIVE = 'LOAD_CONTACTS_RECEIVE'
+export const LOAD_CONTACTS_ERROR = 'LOAD_CONTACTS_RECEIVE'
+
+//Service data actions
+export const LOAD_SERVICE_DATA_REQUEST = 'LOAD_SERVICE_DATA_REQUEST'
+export const LOAD_SERVICE_DATA_RECEIVE = 'LOAD_SERVICE_DATA_RECEIVE'

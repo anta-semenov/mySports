@@ -1,5 +1,9 @@
 //
-//  Use this file to import your target's public headers that you would like to expose to Swift.
+//  mySports-Bridging-Header.h
+//  mySports
+//
+//  Created by Anton on 08/10/2016.
+//  Copyright © 2016 Facebook. All rights reserved.
 //
 
 #import "RCTBridgeModule.h"
