@@ -1,3 +1,18 @@
 {
-  "presets": ["es2015", "react-native"]
+  "presets": [
+    "react-native"
+  ],
+  "plugins": [
+    [
+      "rewrite-require",
+      {
+        "aliases": {
+          "https": "https-browserify",
+          "http": "react-native-http",
+          "url": "url",
+          "ws": "react-native/Libraries/WebSocket/WebSocket"
+        }
+      }
+    ]
+  ]
 }

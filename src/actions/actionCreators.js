@@ -37,7 +37,6 @@ const loadContacts = () => async dispatch => {
 const loadServiceData = () => async dispatch => {
   dispatch({type: types.LOAD_SERVICE_DATA_REQUEST})
   const result = await getAvailableSports()
-  console.log(result);
   dispatch({
     type: types.LOAD_SERVICE_DATA_RECEIVE,
     data: {availableSports: result}

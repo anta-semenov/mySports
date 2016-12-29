@@ -5,5 +5,6 @@
  */
 import {AppRegistry} from 'react-native';
 import Root from './src/components/Root'
+import './globals.js'
 
-AppRegistry.registerComponent('mySports', Root);
+AppRegistry.registerComponent('mySports', () => Root);
