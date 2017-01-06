@@ -27,7 +27,7 @@ export const loadState = () => async dispatch => {
 const loadContacts = () => async dispatch => {
   dispatch({type: types.LOAD_CONTACTS_REQUEST})
   try {
-    const contacts = await NativeModules.MSContacts.getOwnContact()
+    const contacts = await NativeModules.MSContacts.getContacts()
     dispatch({type: types.LOAD_CONTACTS_RECEIVE, contacts})
   } catch (error) {
     dispatch({type: types.LOAD_CONTACTS_ERROR})
