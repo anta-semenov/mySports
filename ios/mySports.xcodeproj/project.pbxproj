@@ -22,10 +22,14 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		3A1BBC341E16E62B009B9723 /* StringRegexpSubstringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1BBC331E16E62B009B9723 /* StringRegexpSubstringExtension.swift */; };
+		3A3C19D11E1ED8C3001FF51A /* String+SipHashExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C19D01E1ED8C3001FF51A /* String+SipHashExtension.swift */; };
 		3A6764211DA926E800042005 /* MSContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6764201DA926E800042005 /* MSContacts.swift */; };
 		3A6764241DA927C200042005 /* MSContactsBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6764231DA927C200042005 /* MSContactsBridge.m */; };
 		3A6B001B1DA816750093B20F /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6B00191DA816750093B20F /* Contacts.framework */; };
 		3A6B001C1DA816750093B20F /* ContactsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6B001A1DA816750093B20F /* ContactsUI.framework */; };
+		3A7690F31E1F79DE00AE9F43 /* SiphashTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7690F21E1F79DE00AE9F43 /* SiphashTest.swift */; };
+		3A7691051E1F7A3300AE9F43 /* String+SipHashExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C19D01E1ED8C3001FF51A /* String+SipHashExtension.swift */; };
 		3A7A51781DA18D1300FEB3DB /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A7A51771DA18D1300FEB3DB /* EvilIcons.ttf */; };
 		3A7A51791DA18D2C00FEB3DB /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A7A51771DA18D1300FEB3DB /* EvilIcons.ttf */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
@@ -95,6 +99,55 @@
 			remoteGlobalIDString = 83CBBA2E1A601D0E00E9B192;
 			remoteInfo = React;
 		};
+		3A1BBC391E16E62C009B9723 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A283A1D9B042B00D4039D;
+			remoteInfo = "RCTImage-tvOS";
+		};
+		3A1BBC3D1E16E62C009B9723 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A28471D9B043800D4039D;
+			remoteInfo = "RCTLinking-tvOS";
+		};
+		3A1BBC411E16E62C009B9723 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A28541D9B044C00D4039D;
+			remoteInfo = "RCTNetwork-tvOS";
+		};
+		3A1BBC451E16E62C009B9723 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A28611D9B046600D4039D;
+			remoteInfo = "RCTSettings-tvOS";
+		};
+		3A1BBC491E16E62C009B9723 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A287B1D9B048500D4039D;
+			remoteInfo = "RCTText-tvOS";
+		};
+		3A1BBC4E1E16E62C009B9723 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A28881D9B049200D4039D;
+			remoteInfo = "RCTWebSocket-tvOS";
+		};
+		3A1BBC521E16E62C009B9723 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A28131D9B038B00D4039D;
+			remoteInfo = "React-tvOS";
+		};
 		78C398B81ACF4ADC00677621 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */;
@@ -131,11 +184,15 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = mySports/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = mySports/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
+		3A1BBC331E16E62B009B9723 /* StringRegexpSubstringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringRegexpSubstringExtension.swift; path = mySports/StringRegexpSubstringExtension.swift; sourceTree = "<group>"; };
+		3A3C19D01E1ED8C3001FF51A /* String+SipHashExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+SipHashExtension.swift"; sourceTree = "<group>"; };
 		3A6764201DA926E800042005 /* MSContacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MSContacts.swift; path = mySports/MSContacts.swift; sourceTree = "<group>"; };
 		3A6764221DA9274600042005 /* mySports-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mySports-Bridging-Header.h"; sourceTree = "<group>"; };
 		3A6764231DA927C200042005 /* MSContactsBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSContactsBridge.m; path = mySports/MSContactsBridge.m; sourceTree = "<group>"; };
 		3A6B00191DA816750093B20F /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
 		3A6B001A1DA816750093B20F /* ContactsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ContactsUI.framework; path = System/Library/Frameworks/ContactsUI.framework; sourceTree = SDKROOT; };
+		3A7690F11E1F79DD00AE9F43 /* mySportsTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mySportsTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		3A7690F21E1F79DE00AE9F43 /* SiphashTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiphashTest.swift; sourceTree = "<group>"; };
 		3A7A51771DA18D1300FEB3DB /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilIcons.ttf; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
@@ -192,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				00C302C01ABCB91800DB3ED1 /* libRCTImage.a */,
+				3A1BBC3A1E16E62C009B9723 /* libRCTImage-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -200,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */,
+				3A1BBC421E16E62C009B9723 /* libRCTNetwork-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -217,6 +276,8 @@
 			children = (
 				00E356F21AD99517003FC87E /* mySportsTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
+				3A7690F21E1F79DE00AE9F43 /* SiphashTest.swift */,
+				3A7690F11E1F79DD00AE9F43 /* mySportsTests-Bridging-Header.h */,
 			);
 			path = mySportsTests;
 			sourceTree = "<group>";
@@ -233,6 +294,7 @@
 			isa = PBXGroup;
 			children = (
 				139105C11AF99BAD00B5F7CC /* libRCTSettings.a */,
+				3A1BBC461E16E62C009B9723 /* libRCTSettings-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -241,6 +303,7 @@
 			isa = PBXGroup;
 			children = (
 				139FDEF41B06529B00C62182 /* libRCTWebSocket.a */,
+				3A1BBC4F1E16E62C009B9723 /* libRCTWebSocket-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -258,6 +321,8 @@
 				13B07FB71A68108700A75B9A /* main.m */,
 				3A6764201DA926E800042005 /* MSContacts.swift */,
 				3A6764231DA927C200042005 /* MSContactsBridge.m */,
+				3A1BBC331E16E62B009B9723 /* StringRegexpSubstringExtension.swift */,
+				3A3C19D01E1ED8C3001FF51A /* String+SipHashExtension.swift */,
 			);
 			name = mySports;
 			sourceTree = "<group>";
@@ -266,6 +331,7 @@
 			isa = PBXGroup;
 			children = (
 				146834041AC3E56700842450 /* libReact.a */,
+				3A1BBC531E16E62C009B9723 /* libReact-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -283,6 +349,7 @@
 			isa = PBXGroup;
 			children = (
 				78C398B91ACF4ADC00677621 /* libRCTLinking.a */,
+				3A1BBC3E1E16E62C009B9723 /* libRCTLinking-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -308,6 +375,7 @@
 			isa = PBXGroup;
 			children = (
 				832341B51AAA6A8300B99B32 /* libRCTText.a */,
+				3A1BBC4A1E16E62C009B9723 /* libRCTText-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -386,6 +454,7 @@
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
 						DevelopmentTeam = 3578ZBUV4W;
+						LastSwiftMigration = 0820;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
@@ -512,6 +581,55 @@
 			remoteRef = 146834031AC3E56700842450 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		3A1BBC3A1E16E62C009B9723 /* libRCTImage-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTImage-tvOS.a";
+			remoteRef = 3A1BBC391E16E62C009B9723 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3A1BBC3E1E16E62C009B9723 /* libRCTLinking-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTLinking-tvOS.a";
+			remoteRef = 3A1BBC3D1E16E62C009B9723 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3A1BBC421E16E62C009B9723 /* libRCTNetwork-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTNetwork-tvOS.a";
+			remoteRef = 3A1BBC411E16E62C009B9723 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3A1BBC461E16E62C009B9723 /* libRCTSettings-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTSettings-tvOS.a";
+			remoteRef = 3A1BBC451E16E62C009B9723 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3A1BBC4A1E16E62C009B9723 /* libRCTText-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTText-tvOS.a";
+			remoteRef = 3A1BBC491E16E62C009B9723 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3A1BBC4F1E16E62C009B9723 /* libRCTWebSocket-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTWebSocket-tvOS.a";
+			remoteRef = 3A1BBC4E1E16E62C009B9723 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3A1BBC531E16E62C009B9723 /* libReact-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libReact-tvOS.a";
+			remoteRef = 3A1BBC521E16E62C009B9723 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		78C398B91ACF4ADC00677621 /* libRCTLinking.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -571,6 +689,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A7691051E1F7A3300AE9F43 /* String+SipHashExtension.swift in Sources */,
+				3A7690F31E1F79DE00AE9F43 /* SiphashTest.swift in Sources */,
 				00E356F31AD99517003FC87E /* mySportsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -579,7 +699,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A3C19D11E1ED8C3001FF51A /* String+SipHashExtension.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				3A1BBC341E16E62B009B9723 /* StringRegexpSubstringExtension.swift in Sources */,
 				3A6764241DA927C200042005 /* MSContactsBridge.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				3A6764211DA926E800042005 /* MSContacts.swift in Sources */,
@@ -614,6 +736,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 3578ZBUV4W;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -624,6 +747,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "mySportsTests/mySportsTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mySports.app/mySports";
 			};
 			name = Debug;
@@ -633,6 +759,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = 3578ZBUV4W;
 				INFOPLIST_FILE = mySportsTests/Info.plist;
@@ -640,6 +767,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "mySportsTests/mySportsTests-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mySports.app/mySports";
 			};
 			name = Release;
