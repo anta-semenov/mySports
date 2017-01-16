@@ -50,7 +50,7 @@ class SiphashTest: XCTestCase {
         }
         
         let testNumber = "\(code)\(number)"
-        let hash = testNumber.siphash()
+        let hash = testNumber.mySportHash()
         
         if var testNumberValue = hashes[hash] {
           if testNumberValue.index(of: testNumber) == nil {
@@ -66,6 +66,56 @@ class SiphashTest: XCTestCase {
         }
       }
       
+      func getRandomCharacter () -> String {
+        return String.init(describing: UnicodeScalar.init(arc4random() % 256))
+      }
+      
+      for _ in 0...rounds {
+        var testMail = String()
+        
+        for _ in 0...Int(arc4random() % 22) {
+          testMail += getRandomCharacter()
+        }
+        
+        testMail += "@"
+        
+        for _ in 0...Int(arc4random() % 7) {
+          testMail += getRandomCharacter()
+        }
+        
+        testMail += "."
+        
+        switch arc4random()%4 {
+        case 0:
+          testMail += "com"
+        case 1:
+          testMail += "ru"
+        case 2:
+          testMail += "org"
+        case 3:
+          testMail += "io"
+        default:
+          testMail += "net"
+        }
+        
+        let hash = testMail.mySportHash()
+        
+        if var testNumberValue = hashes[hash] {
+          if testNumberValue.index(of: testMail) == nil {
+            testNumberValue.append(testMail)
+            hashes[hash] = testNumberValue
+          }
+          
+          if repeatHashes.index(of: hash) == nil {
+            repeatHashes.append(hash)
+          }
+        } else {
+          hashes[hash] = [testMail]
+        }
+
+
+      }
+      
       for repeatHash in repeatHashes {
         print("repeatHash: \(repeatHash), value: \(hashes[repeatHash])")
       }
@@ -78,7 +128,7 @@ class SiphashTest: XCTestCase {
         // This is an example of a performance test case.
         self.measure {
           // Put the code you want to measure the time of here.
-          _ = "test short message".siphash()
+          _ = "test short message".mySportHash()
         }
     }
     

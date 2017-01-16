@@ -48,6 +48,7 @@ class MSContacts: NSObject {
       var contactInfo = [String: [String]]()
       contactInfo["givenName"] = [contact.givenName]
       contactInfo["familyName"] = [contact.familyName]
+      contactInfo["id"] = [contact.identifier]
       var hashes = [String]()
       contact.phoneNumbers.forEach({(phoneNumber: CNLabeledValue<CNPhoneNumber>) -> Void in
         let phoneString = "\(phoneNumber.value)"
