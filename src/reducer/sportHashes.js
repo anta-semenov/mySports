@@ -1,7 +1,7 @@
 import * as actionTypes from '../actions/actionTypes'
 import omitBy from 'lodash/omitBy'
 
-const sportHashes = (state, action) => {
+const sportHashes = (state = {}, action) => {
   switch (action.type) {
     case actionTypes.LOAD_SPORT_HASHES:
       return action.sportHashes

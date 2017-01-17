@@ -1,7 +1,7 @@
 import {connect} from 'react-redux'
 import SportContacts from './SportContacts'
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state, {sportId}) => ({
 
 })
 

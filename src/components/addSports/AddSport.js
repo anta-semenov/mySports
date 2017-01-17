@@ -1,9 +1,10 @@
 import React from 'react'
 import {ListView} from 'react-native'
+import {Actions} from 'react-native-router-flux'
 import SportList from '../SportListItem'
 
 
-const AddSport = ({availableSports, onSportPress, navigator}) => {
+const AddSport = ({availableSports, onSportPress}) => {
   const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1.id !== r2.id})
   return (
     <ListView
@@ -12,7 +13,7 @@ const AddSport = ({availableSports, onSportPress, navigator}) => {
         title={sport.title}
         onPress={() => {
           onSportPress(sport)
-          navigator.pop()
+          Actions.pop()
         }}
       />}
     />

@@ -1,32 +1,29 @@
 import React from 'react'
-import {NavigatorIOS} from 'react-native'
+import {Platform} from 'react-native'
+import {Router, Scene, Actions} from 'react-native-router-flux'
 import MySports from './mySports/mySportsConnect'
 import AddSport from './addSports/addSportConnect'
+import SportContacts from './sportContacts/sportContactsConnect'
 
-class App extends React.Component {
-  handlePlusSportPress() {
-    this._nav.push({
-      component: AddSport,
-      title: 'Choose sport',
-      leftButtonTitle: 'Cancel',
-      onLeftButtonPress: () => this._nav.pop()
-    })
-  }
-
-  render() {
-    return(
-      <NavigatorIOS
-        ref={ref => {this._nav = ref}}
-        initialRoute={{
-          component: MySports,
-          title: 'My sport',
-          rightButtonTitle: 'Add',
-          onRightButtonPress: () => this.handlePlusSportPress()
-        }}
-        style={{flex: 1}}
+const App = () => (
+  <Router sceneStyle={{marginTop: Platform.OS === 'ios' ? 64 : 56}}>
+    <Scene key='root'>
+      <Scene
+        key='mySports'
+        component={MySports}
+        title='My sports'
+        rightTitle='Add'
+        onRight={() => Actions.addSport()}
+        initial={true}/>
+      <Scene key='addSport' component={AddSport} backTitle='Cancel' title='Choose sport'/>
+      <Scene
+        key='sportContacts'
+        component={SportContacts}
+        backTitle='My sports'
+        getTitle={({sportTitle}) => sportTitle }
       />
-    )
-  }
-}
+    </Scene>
+  </Router>
+)
 
 export default App
